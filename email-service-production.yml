@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: email-service
+  kafka:
+    bootstrapServers: http://localhost:29092
+
+email:
+  username: ${MAIL_USERNAME}
+  password: ${MAIL_PASSWORD}
