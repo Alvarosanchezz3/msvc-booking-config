@@ -3,6 +3,12 @@ security:
     expiration-in-minutes: 30
     secret-key: ${secret_key}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+
 eureka:
   instance:
     prefer-ip-address: true
