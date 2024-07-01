@@ -8,7 +8,7 @@ management:
     web:
       exposure:
         include: health,prometheus
-
+      base-path: /actuator/auth
 eureka:
   instance:
     prefer-ip-address: true
