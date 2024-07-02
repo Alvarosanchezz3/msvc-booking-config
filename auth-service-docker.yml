@@ -9,6 +9,7 @@ management:
       exposure:
         include: health,prometheus
       base-path: /actuator/auth
+      
 eureka:
   instance:
     prefer-ip-address: true
@@ -16,4 +17,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://${EUREKA_SERVER_USERNAME}:${EUREKA_SERVER_PASSWORD}@eureka-server:8761/eureka
+      defaultZone: http://${EUREKA_USERNAME}:${EUREKA_PASSWORD}@localhost:8761/eureka
